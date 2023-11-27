@@ -15,8 +15,14 @@
         android:theme="@style/Theme.Warung"
         tools:targetApi="31">
         <activity
+            android:name=".activity.Cart"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Wishlist"
+            android:exported="false" />
+        <activity
             android:name=".activity.profile_main"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".activity.list.HeadsetMain"
             android:exported="false" />

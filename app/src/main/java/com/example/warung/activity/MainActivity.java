@@ -33,11 +33,29 @@ public class MainActivity extends AppCompatActivity {
         ImageButton btnMouse = findViewById(R.id.btn_mouse);
         ImageButton btnHeadset = findViewById(R.id.btn_headset);
         ImageButton btnProfile = findViewById(R.id.profile_btn);
+        ImageButton btnCart = findViewById(R.id.cart_btn);
+        ImageButton btnWishlist = findViewById(R.id.wishlist_btn);
 
         btnProfile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, profile_main.class);
+                startActivity(intent);
+            }
+        });
+
+        btnCart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Cart.class);
+                startActivity(intent);
+            }
+        });
+
+        btnWishlist.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Wishlist.class);
                 startActivity(intent);
             }
         });
