@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.detail.DetailLaptop">
+
+    <ImageView
+        android:layout_marginTop="10px"
+        android:id="@+id/poster_image2"
+        android:layout_width="415dp"
+        android:layout_height="258dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewMerk"
+        style="@style/TextContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:lineSpacingMultiplier="1"
+        android:text="SAMSUNG"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.035"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNama" />
+
+    <TextView
+        android:id="@+id/textViewHarga"
+        style="@style/TextContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:lineSpacingMultiplier="1"
+        android:text="Rp 500.000"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMerk" />
+
+    <TextView
+        android:id="@+id/textViewNama"
+        style="@style/TextContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="2dp"
+        android:text="Daxa M84X Ultimate"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/poster_image2" />
+
+    <TextView
+        android:id="@+id/textViewSpesifikasi"
+        android:layout_width="358dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Spesifikasi"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHarga" />
+
+    <TableLayout
+        android:id="@+id/textViewTabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSpesifikasi">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp">
+
+            <TextView
+                style="@style/TextSpec.Field"
+                android:text="Processor" />
+
+            <TextView
+                style="@style/TextSpec.Field"
+                android:text=":" />
+
+            <TextView
+                android:id="@+id/textViewProcessor"
+                style="@style/TextSpec.Value"
+                android:text="AMD Ryzen™ 7 7735HS Processor" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp">
+
+            <TextView
+                style="@style/TextSpec.Field"
+                android:text="GPU" />
+
+            <TextView
+                style="@style/TextSpec.Field"
+                android:text=":" />
+
+            <TextView
+                android:id="@+id/textViewGpu"
+                style="@style/TextSpec.Value"
+                android:text="NVIDIA® GeForce® RTX4050 6GB (140W) GDDR6" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp">
+
+            <TextView
+                style="@style/TextSpec.Field"
+                android:text="OS" />
+
+            <TextView
+                style="@style/TextSpec.Field"
+                android:text=":" />
+
+            <TextView
+                android:id="@+id/textViewOs"
+                style="@style/TextSpec.Value"
+                android:text="Windows 11 Home" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp">
+
+            <TextView
+                style="@style/TextSpec.Field"
+                android:text="RAM" />
+
+            <TextView
+                style="@style/TextSpec.Field"
+                android:text=":" />
+
+            <TextView
+                android:id="@+id/textViewRam"
+                style="@style/TextSpec.Value"
+                android:text="16GB DDR5 4800MHz RAM (Upgradeable up to 32GB RAM capacity)" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp">
+
+            <TextView
+                style="@style/TextSpec.Field"
+                android:text="Storage" />
+
+            <TextView
+                style="@style/TextSpec.Field"
+                android:text=":" />
+
+            <TextView
+                android:id="@+id/textViewStorage"
+                style="@style/TextSpec.Value"
+                android:text="512GB PCIe SSD (Gen 4)" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp">
+
+            <TextView
+                style="@style/TextSpec.Field"
+                android:text="Display" />
+
+            <TextView
+                style="@style/TextSpec.Field"
+                android:text=":" />
+
+            <TextView
+                android:id="@+id/textViewDisplay"
+                style="@style/TextSpec.Value"
+                android:text="16' 16:10 WUXGA(1920x1200) IPS, 165Hz, 400 nits, 100%sRGB, Anti-glare, G-Sync • backlit TFT LCD" />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btn_wishlist"
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:text="wishlist"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTabel" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
