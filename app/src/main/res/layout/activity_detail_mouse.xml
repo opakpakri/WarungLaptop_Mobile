@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.detail.DetailLaptop">
+
+    <ImageView
+        android:layout_marginTop="10px"
+        android:id="@+id/poster_image2"
+        android:layout_width="415dp"
+        android:layout_height="258dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewMerk"
+        style="@style/TextContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:lineSpacingMultiplier="1"
+        android:text="SAMSUNG"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.035"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNama" />
+
+    <TextView
+        android:id="@+id/textViewHarga"
+        style="@style/TextContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:lineSpacingMultiplier="1"
+        android:text="Rp 500.000"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMerk" />
+
+    <TextView
+        android:id="@+id/textViewNama"
+        style="@style/TextContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="2dp"
+        android:text="Daxa M84X Ultimate"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/poster_image2" />
+
+    <TextView
+        android:id="@+id/textViewSpesifikasi"
+        android:layout_width="358dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Spesifikasi"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHarga" />
+
+    <TableLayout
+        android:id="@+id/textViewTabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSpesifikasi">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp">
+
+            <TextView
+                style="@style/TextSpec.Field"
+                android:text="DPI" />
+
+            <TextView
+                style="@style/TextSpec.Field"
+                android:text=":" />
+
+            <TextView
+                android:id="@+id/textViewDpi"
+                style="@style/TextSpec.Value"
+                android:text="200 – 8,000 dpi" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp">
+
+            <TextView
+                style="@style/TextSpec.Field"
+                android:text="Button" />
+
+            <TextView
+                style="@style/TextSpec.Field"
+                android:text=":" />
+
+            <TextView
+                android:id="@+id/textViewButton"
+                style="@style/TextSpec.Value"
+                android:text="6" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp">
+
+            <TextView
+                style="@style/TextSpec.Field"
+                android:text="Sensor" />
+
+            <TextView
+                style="@style/TextSpec.Field"
+                android:text=":" />
+
+            <TextView
+                android:id="@+id/textViewSensor"
+                style="@style/TextSpec.Value"
+                android:text="Mercury sensor" />
+        </TableRow>
+
+    </TableLayout>
+    <Button
+        android:id="@+id/btn_wishlist"
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:text="wishlist"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTabel" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
